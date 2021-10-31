@@ -33,7 +33,7 @@ Modbus slave(Serial3, station_address, RS_Enable_Pin);
 byte INPUT_PINS[4] = {PB12, PB13, PB14, PB15};
 
 unsigned long now;
-unsigned long last_sent;
+unsigned long last_sent = 0;
 const unsigned long interval = 100;
 bool Heart_Beat_state = 0;
 
